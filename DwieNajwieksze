@@ -1,0 +1,37 @@
+import java.lang.Math;
+import java.util.Arrays;
+
+class DwieNajwieksze{
+
+	public static void main(String args[]){
+	
+	int Argumenty = args.length;
+		if (Argumenty == 0)
+		
+		{
+			System.out.println("Podja 4 liczby jako parametry programu");
+		}
+	
+	else 
+		{
+	
+	
+	double liczbaA = Double.parseDouble(args[0]);
+	double liczbaB = Double.parseDouble(args[1]);
+	double liczbaC = Double.parseDouble(args[2]);
+	double liczbaD = Double.parseDouble(args[3]);
+	
+	System.out.println("Wybrano liczby : " + liczbaA + " " + liczbaB + " " + liczbaC + " " + liczbaD);
+	
+	double[] TablicaLiczb = {liczbaA, liczbaB, liczbaC, liczbaD}; 
+	Arrays.sort(TablicaLiczb);
+	
+	System.out.println("Największe z podanych liczb to : " + TablicaLiczb[3] +
+	" oraz " + TablicaLiczb[2]);
+	
+		}
+	}
+
+}
+
+// program skompilowany w JDK 21.0.2
